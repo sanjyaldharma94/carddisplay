@@ -72,7 +72,7 @@ function displayCard() {
 
   // stop if cards are left
   if(!card) {
-    btn.texContent = "Out of Cards";
+    btn.texContent = "No More";
     return;
   };
 
@@ -87,7 +87,7 @@ function displayCard() {
   deck.splice(cardIndex, 1);
 
   // update HTML to display new deck length
-  document.getElementById("totalCards").textContent = "Total Cards Left: " + deck.length;
+  document.getElementById("totalCards").textContent = "Remaining Cards: " + deck.length;
 
   // add the card to the screen
   cardArea.appendChild(cardImg);
